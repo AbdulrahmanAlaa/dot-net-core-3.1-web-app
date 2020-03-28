@@ -24,7 +24,7 @@
                             @Html.DisplayNameFor(m => m.Articles.FirstOrDefault().Id)
                         </th>
                         <th>
-                            <label asp-for="Articles.FirstOrDefault().name"></label>
+                            <label asp-for="Articles.FirstOrDefault().Title"></label>
                         </th>
                         <th>
 
@@ -37,7 +37,7 @@
                                 @Html.DisplayFor(m => article.Id)
                             </td>
                             <td>
-                                @Html.DisplayFor(m => article.name)
+                                @Html.DisplayFor(m => article.Title)
                             </td>
                             <td>
                                 <button class="btn btn-danger">
