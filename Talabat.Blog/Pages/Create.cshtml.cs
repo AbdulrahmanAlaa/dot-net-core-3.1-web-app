@@ -11,12 +11,12 @@ namespace Talabat.Blog.Pages
     public class CreateModel : PageModel
     {
         private readonly ApplicationDbContext _db;
-
+        public Article Article { get; set; }
         public CreateModel(ApplicationDbContext db)
         {
             _db = db;
         }
-        public void OnGet()
+        public void OnGet()     
         {
 
         }
